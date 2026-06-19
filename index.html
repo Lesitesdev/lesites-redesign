@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Le Sites — sites estratégicos, lojas virtuais e landing pages que transformam presença digital em negócio.">
+  <meta name="theme-color" content="#0b0f0e">
+  <title>Le Sites — Sites que trabalham pelo seu negócio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+  <header class="site-header" id="topo">
+    <a class="brand brand-signature" href="#inicio" aria-label="Le Sites, início">
+      <span class="brand-lockup"><strong>LE</strong><i>/</i><b>SITES</b></span><small>WEB STUDIO</small>
+    </a>
+    <nav class="desktop-nav" aria-label="Navegação principal">
+      <a href="#projetos">Projetos</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#processo">Processo</a>
+      <a href="#sobre">Sobre</a>
+      <a href="orcamento.html">Orçamento</a>
+    </nav>
+    <a class="header-cta" href="orcamento.html">Pedir orçamento <span>↗</span></a>
+    <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <div class="mobile-menu" aria-hidden="true">
+    <nav>
+      <a href="#projetos">Projetos <span>01</span></a>
+      <a href="#servicos">Serviços <span>02</span></a>
+      <a href="#processo">Processo <span>03</span></a>
+      <a href="#sobre">Sobre <span>04</span></a>
+      <a href="orcamento.html">Pedir orçamento <span>05</span></a>
+      <a href="orcamento.html">Orçamento <span>06</span></a>
+    </nav>
+  </div>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-grid" aria-hidden="true"></div>
+      <div class="hero-copy reveal">
+        <div class="eyebrow"><span class="status-dot"></span> Disponível para novos projetos</div>
+        <h1>Seu negócio merece<br>mais que um site <em>bonito.</em></h1>
+        <p>Eu transformo ideias em experiências digitais claras, rápidas e construídas para gerar confiança — e resultado.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="orcamento.html">Tirar uma ideia do papel <span>↗</span></a>
+          <a class="text-link" href="#projetos">Ver projetos <span>↓</span></a>
+        </div>
+        <small class="no-commitment">Orçamento gratuito e sem compromisso.</small>
+      </div>
+      <div class="hero-visual reveal">
+        <div class="portrait-wrap">
+          <div class="portrait-label">LEANDRO BUENO<br><span>FRONT-END DEVELOPER</span></div>
+          <img src="img/Perfil.png" alt="Leandro Bueno, desenvolvedor da Le Sites">
+          <div class="orbit orbit-one"></div>
+          <div class="orbit orbit-two"></div>
+        </div>
+        <div class="floating-note note-one"><span>✦</span> Design com propósito</div>
+        <div class="floating-note note-two"><strong>100%</strong><span>Responsivo</span></div>
+      </div>
+      <div class="hero-footer reveal">
+        <span>De São Paulo para todo o Brasil</span>
+        <div class="hero-metrics">
+          <div><strong>06+</strong><span>projetos entregues</span></div>
+          <div><strong>04</strong><span>soluções digitais</span></div>
+          <div><strong>01</strong><span>contato direto</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="marquee" aria-label="Especialidades">
+      <div class="marquee-track">
+        <div class="marquee-group">
+          <span>LANDING PAGES</span><i>✦</i><span>E-COMMERCE</span><i>✦</i><span>SITES INSTITUCIONAIS</span><i>✦</i><span>EXPERIÊNCIAS DIGITAIS</span><i>✦</i><span>DESIGN RESPONSIVO</span><i>✦</i><span>PERFORMANCE</span><i>✦</i><span>SEO</span><i>✦</i><span>CONVERSÃO</span><i>✦</i>
+        </div>
+        <div class="marquee-group" aria-hidden="true">
+          <span>LANDING PAGES</span><i>✦</i><span>E-COMMERCE</span><i>✦</i><span>SITES INSTITUCIONAIS</span><i>✦</i><span>EXPERIÊNCIAS DIGITAIS</span><i>✦</i><span>DESIGN RESPONSIVO</span><i>✦</i><span>PERFORMANCE</span><i>✦</i><span>SEO</span><i>✦</i><span>CONVERSÃO</span><i>✦</i>
+        </div>
+      </div>
+    </section>
+
+    <section class="work section" id="projetos">
+      <div class="section-heading reveal">
+        <div><span class="section-number">01</span><span class="kicker">Projetos selecionados</span></div>
+        <h2>Trabalhos que falam<br><em>antes de mim.</em></h2>
+        <p>Uma seleção de experiências criadas para negócios reais. Cada projeto nasce de um desafio e termina com uma solução feita sob medida.</p>
+      </div>
+      <div class="project-filters reveal" role="group" aria-label="Filtrar projetos">
+        <button class="filter is-active" data-filter="Todos">Todos</button>
+        <button class="filter" data-filter="E-commerce">E-commerce</button>
+        <button class="filter" data-filter="Institucional">Institucional</button>
+        <button class="filter" data-filter="Landing page">Landing pages</button>
+      </div>
+      <div class="projects-grid" id="projectsGrid"></div>
+      <p class="portfolio-note reveal"><span>+</span> Este espaço cresce a cada novo desafio.</p>
+    </section>
+
+    <section class="services section" id="servicos">
+      <div class="services-intro reveal">
+        <span class="section-number">02</span>
+        <span class="kicker">O que eu construo</span>
+        <h2>Estratégia, visual<br>e código na <em>mesma mesa.</em></h2>
+        <p>Sem pacotes engessados. A solução certa depende do momento, do público e do objetivo do seu negócio.</p>
+        <a class="text-link light" href="orcamento.html">Encontrar a solução ideal <span>↗</span></a>
+      </div>
+      <div class="services-list">
+        <article class="service-item reveal">
+          <span>01</span><div><h3>Sites institucionais</h3><p>Uma presença digital sólida, profissional e fácil de encontrar.</p></div><i>↗</i>
+        </article>
+        <article class="service-item reveal">
+          <span>02</span><div><h3>Lojas virtuais</h3><p>Experiências de compra simples, confiáveis e prontas para vender 24h.</p></div><i>↗</i>
+        </article>
+        <article class="service-item reveal">
+          <span>03</span><div><h3>Landing pages</h3><p>Páginas focadas em uma ação: captar, apresentar ou vender.</p></div><i>↗</i>
+        </article>
+        <article class="service-item reveal">
+          <span>04</span><div><h3>Sites para delivery</h3><p>Cardápio e pedidos em uma jornada rápida, intuitiva e sem ruído.</p></div><i>↗</i>
+        </article>
+      </div>
+    </section>
+
+    <section class="process section" id="processo">
+      <div class="section-heading compact reveal">
+        <div><span class="section-number">03</span><span class="kicker">Como funciona</span></div>
+        <h2>Um processo simples.<br><em>Sem caixa-preta.</em></h2>
+      </div>
+      <div class="process-grid">
+        <article class="process-card reveal"><span>01 / IMERSÃO</span><div class="process-icon">⌁</div><h3>Eu escuto primeiro.</h3><p>Entendo seu negócio, público, concorrentes e o que precisa mudar de verdade.</p></article>
+        <article class="process-card reveal"><span>02 / DIREÇÃO</span><div class="process-icon">✦</div><h3>A ideia ganha forma.</h3><p>Defino estrutura, conteúdo e direção visual antes de entrar no código.</p></article>
+        <article class="process-card reveal"><span>03 / CONSTRUÇÃO</span><div class="process-icon">⌘</div><h3>Design que funciona.</h3><p>Desenvolvo com atenção à velocidade, responsividade e cada interação.</p></article>
+        <article class="process-card reveal"><span>04 / ENTREGA</span><div class="process-icon">↗</div><h3>Seu site vai ao ar.</h3><p>Você recebe o projeto revisado, publicado e com suporte para seguir tranquilo.</p></article>
+      </div>
+    </section>
+
+    <section class="testimonial section">
+      <div class="quote-mark">“</div>
+      <div class="testimonial-content reveal">
+        <span class="kicker">O que dizem depois da entrega</span>
+        <blockquote>“O resultado ficou muito melhor do que eu imaginava. O Leandro entendeu o negócio e trouxe uma solução clara, bonita e fácil para nossos clientes.”</blockquote>
+        <div class="client"><span>CM</span><div><strong>Cliente Le Sites</strong><small>Projeto digital</small></div></div>
+      </div>
+      <div class="testimonial-side reveal">
+        <p>Seu comentário pode ocupar este espaço no próximo projeto.</p>
+        <a href="orcamento.html">Vamos criar seu case <span>↗</span></a>
+      </div>
+    </section>
+
+    <section class="about section" id="sobre">
+      <div class="about-photo reveal">
+        <img src="img/Capturar.png" alt="Leandro Bueno trabalhando em um projeto">
+        <span class="photo-caption">LE SITES / SÃO PAULO</span>
+      </div>
+      <div class="about-copy reveal">
+        <div><span class="section-number">04</span><span class="kicker">Por trás do código</span></div>
+        <h2>Proximidade de quem é pequeno.<br><em>Entrega de quem pensa grande.</em></h2>
+        <p>Sou Leandro Bueno, desenvolvedor front-end e fundador da Le Sites. Gosto de unir tecnologia, design e visão de negócio para ajudar marcas a ocuparem seu espaço na internet com mais clareza.</p>
+        <p>Você conversa diretamente comigo do primeiro rascunho até o site no ar. Menos ruído, mais cuidado — e nenhuma surpresa no caminho.</p>
+        <div class="about-values"><span>Comunicação clara</span><span>Projeto sob medida</span><span>Suporte de verdade</span></div>
+      </div>
+    </section>
+
+    <section class="faq section">
+      <div class="faq-heading reveal"><span class="section-number">05</span><span class="kicker">Antes de começar</span><h2>Perguntas honestas.<br><em>Respostas diretas.</em></h2></div>
+      <div class="accordion">
+        <details class="reveal"><summary><span>01</span>Quanto tempo leva para criar um site?<i>+</i></summary><p>Depende do tamanho e da complexidade. Uma landing page pode ficar pronta em poucos dias; projetos maiores pedem algumas semanas. O prazo é combinado com clareza antes do início.</p></details>
+        <details class="reveal"><summary><span>02</span>O site funciona bem no celular?<i>+</i></summary><p>Sim. Todo projeto é desenvolvido para funcionar com qualidade em celulares, tablets e computadores.</p></details>
+        <details class="reveal"><summary><span>03</span>Domínio e hospedagem estão inclusos?<i>+</i></summary><p>Posso orientar e cuidar de toda a configuração. Os custos de domínio e hospedagem são apresentados separadamente para que você saiba exatamente pelo que está pagando.</p></details>
+        <details class="reveal"><summary><span>04</span>Consigo atualizar o site depois?<i>+</i></summary><p>Sim. A melhor forma depende do projeto: posso deixar áreas fáceis de atualizar ou fazer a manutenção para você.</p></details>
+        <details class="reveal"><summary><span>05</span>Como solicito um orçamento?<i>+</i></summary><p>É só abrir a página “Pedir orçamento” ou me chamar no WhatsApp. Vou entender sua necessidade antes de propor qualquer solução — sem compromisso.</p></details>
+      </div>
+    </section>
+
+    <section class="contact contact-cta section" id="contato">
+      <div class="contact-copy reveal">
+        <span class="section-number">06</span><span class="kicker">Próximo passo</span>
+        <h2>Seu projeto começa<br><em>com uma boa conversa.</em></h2>
+        <p>Responda algumas perguntas sobre seu negócio e receba uma análise inicial. É gratuito, rápido e sem compromisso.</p>
+        <a class="whatsapp-direct" href="https://wa.me/5511974710821" target="_blank" rel="noopener"><span>WA</span><div><small>Prefere ir direto ao ponto?</small><strong>Chamar no WhatsApp ↗</strong></div></a>
+      </div>
+      <div class="proposal-card reveal">
+        <div class="proposal-top"><span>ORÇAMENTO / 01</span><i>↗</i></div>
+        <h3>Conte o que você imagina.<br>Eu organizo o caminho.</h3>
+        <ul><li><span>01</span>Leva cerca de 5 minutos</li><li><span>02</span>Gera um resumo organizado</li><li><span>03</span>Resposta pessoal, sem compromisso</li></ul>
+        <a class="button button-primary proposal-button" href="orcamento.html">Começar meu orçamento <span>↗</span></a>
+        <small>Nenhum pagamento ou contratação nesta etapa.</small>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-top"><a class="brand brand-signature" href="#inicio"><span class="brand-lockup"><strong>LE</strong><i>/</i><b>SITES</b></span><small>WEB STUDIO</small></a><p>Sites estratégicos para negócios<br>que querem avançar.</p><a class="back-top" href="#inicio">VOLTAR AO TOPO ↑</a></div>
+    <div class="footer-bottom"><span>© <span id="year"></span> Le Sites. Todos os direitos reservados.</span><div><a href="https://www.instagram.com/lesites/" target="_blank" rel="noopener">Instagram</a><a href="https://github.com/Lesitesdev" target="_blank" rel="noopener">GitHub</a><a href="https://wa.me/5511974710821" target="_blank" rel="noopener">WhatsApp</a></div></div>
+  </footer>
+  <a class="whatsapp-float" href="https://wa.me/5511974710821?text=Olá,%20Leandro!%20Quero%20conversar%20sobre%20um%20site." aria-label="Conversar no WhatsApp" target="_blank" rel="noopener"><img src="img/bxl-whatsapp.svg" alt=""><span>Vamos conversar?</span></a>
+  <script src="script.js"></script>
+</body>
+</html>

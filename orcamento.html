@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#0b0f0e"><meta name="description" content="Briefing profissional para criação de sites — Le Sites.">
+  <title>Pedido de orçamento — Le Sites</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="briefing.css">
+  <link rel="stylesheet" href="briefing-extra.css">
+</head>
+<body>
+  <header><a class="brand brand-signature" href="index.html"><span class="brand-lockup"><strong>LE</strong><i>/</i><b>SITES</b></span><small>WEB STUDIO</small></a><div><strong>Pedido de orçamento</strong><small>Gratuito e sem compromisso</small></div><a class="close" href="index.html" aria-label="Fechar">×</a></header>
+  <main>
+    <aside>
+      <span class="mini">ORÇAMENTO GRATUITO / 2026</span><h1>Vamos entender<br>o seu <em>projeto.</em></h1>
+      <p>Responda no seu ritmo. É gratuito e sem compromisso. No final, você recebe um resumo completo para revisar e enviar.</p>
+      <ol id="stepList">
+        <li class="active"><i>01</i><span><b>Você e a empresa</b><small>Contato e contexto</small></span></li>
+        <li><i>02</i><span><b>Objetivo</b><small>O que precisa mudar</small></span></li>
+        <li><i>03</i><span><b>Estrutura</b><small>Páginas e funções</small></span></li>
+        <li><i>04</i><span><b>Identidade</b><small>Estilo e conteúdo</small></span></li>
+        <li><i>05</i><span><b>Prazo e investimento</b><small>Expectativas reais</small></span></li>
+        <li><i>06</i><span><b>Resumo final</b><small>Revisar e enviar</small></span></li>
+      </ol>
+      <p class="help">Ficou com dúvida?<br><a href="https://wa.me/5511974710821" target="_blank">Fale comigo no WhatsApp ↗</a></p>
+    </aside>
+    <section class="panel">
+      <div class="mobile-progress"><span id="stepCounter">ETAPA 1 DE 6</span><div><i id="progress"></i></div></div>
+      <form id="briefingForm" action="https://formsubmit.co/lesites.dev@gmail.com" method="post" data-recipient="lesites.dev@gmail.com" novalidate>
+        <input type="hidden" name="_subject" value="Novo pedido de orçamento — Le Sites">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" id="redirectTo" value="Obrigado.html">
+        <input type="hidden" name="_replyto" id="replyTo">
+        <textarea name="message" id="emailSummary" hidden></textarea>
+        <fieldset class="step active">
+          <div class="free-badge">ORÇAMENTO GRATUITO E SEM COMPROMISSO</div><div class="heading"><span>01 / PRIMEIRO, AS APRESENTAÇÕES</span><h2>Conte sobre você<br>e o seu negócio.</h2><p>Estas informações dão contexto antes de pensarmos na solução.</p></div>
+          <div class="two"><label>Seu nome *<input name="nome" required placeholder="Nome completo"></label><label>Empresa ou marca *<input name="empresa" required placeholder="Como sua marca é conhecida?"></label></div>
+          <div class="two"><label>WhatsApp *<input name="whatsapp" type="tel" required placeholder="(11) 99999-9999"></label><label>E-mail *<input name="email" type="email" required placeholder="voce@empresa.com"></label></div>
+          <label>O que sua empresa faz? *<textarea name="negocio" required rows="4" placeholder="O que vende, para quem e qual é o seu diferencial?"></textarea></label>
+          <div class="question"><legend>Há quanto tempo a empresa existe?</legend><div class="choices"><label><input type="radio" name="tempo" value="Ainda vai começar"><span>Ainda vai começar</span></label><label><input type="radio" name="tempo" value="Menos de 1 ano"><span>Menos de 1 ano</span></label><label><input type="radio" name="tempo" value="1 a 3 anos"><span>1 a 3 anos</span></label><label><input type="radio" name="tempo" value="Mais de 3 anos"><span>Mais de 3 anos</span></label></div></div>
+        </fieldset>
+
+        <fieldset class="step">
+          <div class="heading"><span>02 / A RAZÃO DO PROJETO</span><h2>Onde você quer<br><em>chegar?</em></h2><p>Um bom site começa com um objetivo claro.</p></div>
+          <div class="question required-choice"><legend>Qual projeto você imagina? *</legend><div class="cards"><label><input type="radio" name="tipo" value="Site institucional"><span><b>Site institucional</b><small>Apresentar empresa e serviços.</small></span></label><label><input type="radio" name="tipo" value="Loja virtual"><span><b>Loja virtual</b><small>Expor e vender produtos.</small></span></label><label><input type="radio" name="tipo" value="Landing page"><span><b>Landing page</b><small>Divulgar e captar contatos.</small></span></label><label><input type="radio" name="tipo" value="Delivery / pedidos"><span><b>Delivery / pedidos</b><small>Cardápio e atendimento.</small></span></label><label><input type="radio" name="tipo" value="Redesign"><span><b>Redesign</b><small>Modernizar um site existente.</small></span></label><label><input type="radio" name="tipo" value="Ainda não sei"><span><b>Ainda não sei</b><small>Preciso de orientação.</small></span></label></div></div>
+          <div class="question"><legend>Principais objetivos <small>(escolha vários)</small></legend><div class="choices"><label><input type="checkbox" name="objetivos" value="Transmitir credibilidade"><span>Credibilidade</span></label><label><input type="checkbox" name="objetivos" value="Conseguir clientes"><span>Conseguir clientes</span></label><label><input type="checkbox" name="objetivos" value="Vender online"><span>Vender online</span></label><label><input type="checkbox" name="objetivos" value="Apresentar serviços"><span>Apresentar serviços</span></label><label><input type="checkbox" name="objetivos" value="Receber pedidos"><span>Receber pedidos</span></label><label><input type="checkbox" name="objetivos" value="Aparecer no Google"><span>Aparecer no Google</span></label></div></div>
+          <label>Quem é seu cliente ideal? *<textarea name="publico" required rows="3" placeholder="Idade, região, interesses, necessidades ou perfil."></textarea></label>
+          <label>Concorrentes ou sites de referência<textarea name="concorrentes" rows="3" placeholder="Links, nomes e o que chama atenção em cada um."></textarea></label>
+        </fieldset>
+
+        <fieldset class="step">
+          <div class="heading"><span>03 / O QUE PRECISA EXISTIR</span><h2>Vamos montar<br>a <em>estrutura.</em></h2><p>Marque o que considera necessário. Ajustaremos juntos depois.</p></div>
+          <div class="question"><legend>Páginas desejadas</legend><div class="check-grid"><label><input type="checkbox" name="paginas" value="Início"><span>Início</span></label><label><input type="checkbox" name="paginas" value="Sobre"><span>Sobre</span></label><label><input type="checkbox" name="paginas" value="Serviços"><span>Serviços</span></label><label><input type="checkbox" name="paginas" value="Produtos / catálogo"><span>Produtos / catálogo</span></label><label><input type="checkbox" name="paginas" value="Portfólio"><span>Portfólio</span></label><label><input type="checkbox" name="paginas" value="Depoimentos"><span>Depoimentos</span></label><label><input type="checkbox" name="paginas" value="Blog"><span>Blog / notícias</span></label><label><input type="checkbox" name="paginas" value="FAQ"><span>Perguntas frequentes</span></label><label><input type="checkbox" name="paginas" value="Contato"><span>Contato</span></label></div></div>
+          <div class="question"><legend>Funcionalidades necessárias</legend><div class="check-grid"><label><input type="checkbox" name="funcoes" value="WhatsApp"><span>WhatsApp</span></label><label><input type="checkbox" name="funcoes" value="Formulário"><span>Formulário</span></label><label><input type="checkbox" name="funcoes" value="Mapa"><span>Mapa</span></label><label><input type="checkbox" name="funcoes" value="Agendamento"><span>Agendamento</span></label><label><input type="checkbox" name="funcoes" value="Pagamento online"><span>Pagamento online</span></label><label><input type="checkbox" name="funcoes" value="Área de login"><span>Área de login</span></label><label><input type="checkbox" name="funcoes" value="Redes sociais"><span>Redes sociais</span></label><label><input type="checkbox" name="funcoes" value="Newsletter"><span>Newsletter</span></label><label><input type="checkbox" name="funcoes" value="Chat online"><span>Chat online</span></label></div></div>
+          <label>Alguma função específica?<textarea name="funcao_extra" rows="3" placeholder="Descreva o que o visitante precisa conseguir fazer."></textarea></label>
+          <div class="question"><legend>O conteúdo será atualizado?</legend><div class="choices"><label><input type="radio" name="atualizacao" value="Quero atualizar sozinho"><span>Quero atualizar</span></label><label><input type="radio" name="atualizacao" value="Quero manutenção"><span>Quero manutenção</span></label><label><input type="radio" name="atualizacao" value="Raramente"><span>Raramente</span></label><label><input type="radio" name="atualizacao" value="Ainda não sei"><span>Ainda não sei</span></label></div></div>
+        </fieldset>
+
+        <fieldset class="step">
+          <div class="heading"><span>04 / PERSONALIDADE DA MARCA</span><h2>Como deve<br><em>parecer e soar?</em></h2><p>Escolha as sensações que mais combinam com a marca.</p></div>
+          <div class="question"><legend>Estilo visual <small>(até 3)</small></legend><div class="choices limit"><label><input type="checkbox" name="estilo" value="Moderno"><span>Moderno</span></label><label><input type="checkbox" name="estilo" value="Minimalista"><span>Minimalista</span></label><label><input type="checkbox" name="estilo" value="Elegante"><span>Elegante</span></label><label><input type="checkbox" name="estilo" value="Criativo"><span>Criativo</span></label><label><input type="checkbox" name="estilo" value="Acolhedor"><span>Acolhedor</span></label><label><input type="checkbox" name="estilo" value="Tecnológico"><span>Tecnológico</span></label><label><input type="checkbox" name="estilo" value="Sofisticado"><span>Sofisticado</span></label><label><input type="checkbox" name="estilo" value="Divertido"><span>Divertido</span></label></div></div>
+          <label>Cores desejadas ou proibidas<input name="cores" placeholder="Ex.: gosto de azul-marinho; evitar vermelho."></label>
+          <div class="question"><legend>Já possui identidade visual?</legend><div class="choices"><label><input type="radio" name="identidade" value="Completa"><span>Sim, completa</span></label><label><input type="radio" name="identidade" value="Só logotipo"><span>Só logotipo</span></label><label><input type="radio" name="identidade" value="Não possui"><span>Não possui</span></label><label><input type="radio" name="identidade" value="Precisa atualizar"><span>Precisa atualizar</span></label></div></div>
+          <div class="question"><legend>Materiais disponíveis</legend><div class="check-grid"><label><input type="checkbox" name="materiais" value="Textos prontos"><span>Textos prontos</span></label><label><input type="checkbox" name="materiais" value="Fotos profissionais"><span>Fotos profissionais</span></label><label><input type="checkbox" name="materiais" value="Logo em qualidade"><span>Logo em qualidade</span></label><label><input type="checkbox" name="materiais" value="Preciso de textos"><span>Preciso de textos</span></label><label><input type="checkbox" name="materiais" value="Preciso de imagens"><span>Preciso de imagens</span></label><label><input type="checkbox" name="materiais" value="Preciso de identidade"><span>Preciso de identidade</span></label></div></div>
+          <label>Referências visuais<textarea name="referencias_visuais" rows="3" placeholder="Links de sites, perfis ou marcas e o que você gosta neles."></textarea></label>
+        </fieldset>
+
+        <fieldset class="step">
+          <div class="heading"><span>05 / EXPECTATIVAS REAIS</span><h2>Prazo, investimento<br>e <em>prioridades.</em></h2><p>Isso permite indicar uma solução possível e transparente.</p></div>
+          <div class="question required-choice"><legend>Quando deseja lançar? *</legend><div class="cards two-cards"><label><input type="radio" name="prazo" value="Até 15 dias"><span><b>Até 15 dias</b><small>Tenho urgência ou campanha.</small></span></label><label><input type="radio" name="prazo" value="Em 30 dias"><span><b>Em 30 dias</b><small>Quero começar em breve.</small></span></label><label><input type="radio" name="prazo" value="2 a 3 meses"><span><b>2 a 3 meses</b><small>Posso planejar com calma.</small></span></label><label><input type="radio" name="prazo" value="Sem prazo"><span><b>Sem prazo</b><small>Quero entender primeiro.</small></span></label></div></div>
+          <div class="question required-choice"><legend>Faixa de investimento imaginada *</legend><div class="choices"><label><input type="radio" name="investimento" value="Até R$ 1.500"><span>Até R$ 1.500</span></label><label><input type="radio" name="investimento" value="R$ 1.500 a R$ 3.000"><span>R$ 1.500–3.000</span></label><label><input type="radio" name="investimento" value="R$ 3.000 a R$ 6.000"><span>R$ 3.000–6.000</span></label><label><input type="radio" name="investimento" value="Acima de R$ 6.000"><span>Acima de R$ 6.000</span></label><label><input type="radio" name="investimento" value="Quero orientação"><span>Quero orientação</span></label></div></div>
+          <div class="two"><label>Já possui domínio?<input name="dominio" placeholder="Ex.: minhaempresa.com.br ou não"></label><label>Já possui hospedagem?<input name="hospedagem" placeholder="Qual empresa ou ainda não"></label></div>
+          <label>O que tornaria este projeto um sucesso? *<textarea name="sucesso" required rows="4" placeholder="Ex.: receber pedidos, parecer profissional, reduzir dúvidas..."></textarea></label>
+          <label>Algo mais que precisamos saber?<textarea name="observacoes" rows="3" placeholder="Restrições, preocupações, ideias ou prioridades."></textarea></label>
+        </fieldset>
+
+        <fieldset class="step summary-step">
+          <div class="heading"><span>06 / TUDO ORGANIZADO</span><h2>Seu briefing está<br><em>pronto.</em></h2><p>Revise tudo. Você ainda pode voltar e alterar qualquer resposta.</p></div>
+          <div id="summary" class="summary"></div>
+          <label class="consent"><input type="checkbox" id="consent"><span>Autorizo a Le Sites a entrar em contato usando os dados fornecidos exclusivamente para conversar sobre este projeto.</span></label>
+          <p class="privacy">As respostas ficam neste navegador até você escolher copiar, baixar ou enviar.</p>
+          <div class="summary-actions"><button type="button" class="button outline" id="copy">Copiar</button><button type="button" class="button outline" id="download">Baixar .txt</button><button type="button" class="button primary" id="send">Enviar orçamento por e-mail ↗</button></div>
+        </fieldset>
+
+        <p id="error" class="error" role="alert"></p>
+        <nav class="form-nav"><button type="button" id="back">← Voltar</button><small id="saved">Respostas salvas automaticamente</small><button type="button" id="next" class="button primary">Continuar →</button></nav>
+      </form>
+    </section>
+  </main>
+  <div id="toast" class="toast"></div><script src="briefing.js"></script>
+</body></html>

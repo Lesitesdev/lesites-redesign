@@ -1,0 +1,6 @@
+.free-badge{display:inline-flex;margin-bottom:1.5rem;padding:.55rem .75rem;background:#e5f6b6;color:#425807;font-size:.58rem;font-weight:800;letter-spacing:.1em;border-left:3px solid #799e00}
+[hidden]{display:none!important}
+.brand-signature{display:flex!important;align-items:flex-start!important;gap:0!important;flex-direction:column;line-height:1}
+.brand-lockup{display:flex;align-items:center;font:800 1.08rem "Manrope",sans-serif;letter-spacing:-.055em}
+.brand-lockup i{font-style:normal;color:#b9f227;font-weight:500;margin:0 .18rem;transform:skewX(-10deg)}
+.brand-signature>small{font-size:.4rem!important;letter-spacing:.28em;color:#818a85!important;margin-top:.2rem}
