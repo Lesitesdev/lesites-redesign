@@ -47,7 +47,7 @@
       <div class="hero-copy reveal">
         <div class="eyebrow"><span class="status-dot"></span> Disponível para novos projetos</div>
         <h1>Seu negócio merece<br>mais que um site <em>bonito.</em></h1>
-        <p>Eu transformo ideias em experiências digitais claras, rápidas e construídas para gerar confiança — e resultado.</p>
+        <p>Eu transformo ideias em experiências digitais claras, rápidas e construídas para gerar confiança e resultado.</p>
         <div class="hero-actions">
           <a class="button button-primary" href="orcamento.html">Tirar uma ideia do papel <span>↗</span></a>
           <a class="text-link" href="#projetos">Ver projetos <span>↓</span></a>
@@ -138,15 +138,20 @@
       </div>
     </section>
 
-    <section class="testimonial section">
+    <section class="testimonial section" id="avaliacoes" aria-label="Avaliações de clientes">
       <div class="quote-mark">“</div>
       <div class="testimonial-content reveal">
         <span class="kicker">O que dizem depois da entrega</span>
-        <blockquote>“O resultado ficou muito melhor do que eu imaginava. O Leandro entendeu o negócio e trouxe uma solução clara, bonita e fácil para nossos clientes.”</blockquote>
-        <div class="client"><span>CM</span><div><strong>Cliente Le Sites</strong><small>Projeto digital</small></div></div>
+        <div class="testimonial-slide" id="testimonialSlide" aria-live="polite"></div>
+        <div class="testimonial-controls">
+          <button type="button" id="testimonialPrev" aria-label="Avaliação anterior">←</button>
+          <div id="testimonialDots" class="testimonial-dots" aria-label="Selecionar avaliação"></div>
+          <button type="button" id="testimonialNext" aria-label="Próxima avaliação">→</button>
+        </div>
       </div>
       <div class="testimonial-side reveal">
-        <p>Seu comentário pode ocupar este espaço no próximo projeto.</p>
+        <span id="testimonialCounter">01 / 01</span>
+        <p>A experiência de cada cliente ajuda a contar a história de um bom projeto.</p>
         <a href="orcamento.html">Vamos criar seu case <span>↗</span></a>
       </div>
     </section>
@@ -198,6 +203,7 @@
     <div class="footer-bottom"><span>© <span id="year"></span> Le Sites. Todos os direitos reservados.</span><div><a href="https://www.instagram.com/lesites/" target="_blank" rel="noopener">Instagram</a><a href="https://github.com/Lesitesdev" target="_blank" rel="noopener">GitHub</a><a href="https://wa.me/5511974710821" target="_blank" rel="noopener">WhatsApp</a></div></div>
   </footer>
   <a class="whatsapp-float" href="https://wa.me/5511974710821?text=Olá,%20Leandro!%20Quero%20conversar%20sobre%20um%20site." aria-label="Conversar no WhatsApp" target="_blank" rel="noopener"><img src="img/bxl-whatsapp.svg" alt=""><span>Vamos conversar?</span></a>
+  <script src="conteudo.js"></script>
   <script src="script.js"></script>
 </body>
 </html>

@@ -1,30 +1,61 @@
-// Adicione novos projetos aqui. O site cria os cards e filtros automaticamente.
-const projects = [
-  { title: 'Majestoso Mundo dos Vinhos', category: 'E-commerce', year: '2025', image: 'img/Meus projetos/Majestoso mundo dos vinhos.png', description: 'Loja virtual para uma curadoria de vinhos.' },
-  { title: 'E-food', category: 'E-commerce', year: '2025', image: 'img/Meus projetos/Efood.png', description: 'Experiência digital para pedidos e delivery.' },
-  { title: 'Casa da Juju', category: 'Institucional', year: '2024', image: 'img/Meus projetos/Casa da juju.png', description: 'Presença online acolhedora para a marca.' },
-  { title: 'Franco News', category: 'Institucional', year: '2024', image: 'img/Meus projetos/Franco News.png', description: 'Portal editorial para notícias diárias.' },
-  { title: 'Academia Blue Fit', category: 'Landing page', year: '2024', image: 'img/Meus projetos/Acdemia Blue fit.png', description: 'Página de alta energia para captação de alunos.' },
-  { title: 'Le Sites', category: 'Landing page', year: '2024', image: 'img/Meus projetos/LeSites.png', description: 'Landing page para apresentar serviços digitais.' }
-];
+const projects = window.siteContent?.projetos || [];
+const testimonials = window.siteContent?.avaliacoes || [];
 
 const grid = document.querySelector('#projectsGrid');
 
 function renderProjects(filter = 'Todos') {
-  const visible = filter === 'Todos' ? projects : projects.filter(project => project.category === filter);
+  const visible = filter === 'Todos' ? projects : projects.filter(project => project.categoria === filter);
   grid.innerHTML = visible.map((project, index) => `
     <article class="project-card reveal is-visible" style="transition-delay:${(index % 2) * 80}ms">
-      <div class="project-image">
-        <img src="${project.image}" alt="Tela do projeto ${project.title}" loading="lazy">
-      </div>
+      ${project.link ? `<a class="project-image" href="${project.link}" target="_blank" rel="noopener" aria-label="Abrir projeto ${project.titulo}">` : '<div class="project-image">'}
+        <img src="${project.imagem}" alt="Tela do projeto ${project.titulo}" loading="lazy">
+      ${project.link ? '</a>' : '</div>'}
       <div class="project-meta">
-        <div><h3>${project.title}</h3><p>${project.description}</p></div>
-        <span>${project.category} / ${project.year}</span>
+        <div><h3>${project.titulo}</h3><p>${project.descricao}</p></div>
+        <span>${project.categoria} / ${project.ano}</span>
       </div>
     </article>`).join('');
 }
 
 renderProjects();
+
+let testimonialIndex = 0;
+let testimonialTimer;
+const testimonialSection = document.querySelector('.testimonial');
+const testimonialSlide = document.querySelector('#testimonialSlide');
+const testimonialDots = document.querySelector('#testimonialDots');
+
+function renderTestimonial(index) {
+  if (!testimonials.length) return;
+  testimonialIndex = (index + testimonials.length) % testimonials.length;
+  const item = testimonials[testimonialIndex];
+  testimonialSlide.classList.remove('is-changing');
+  void testimonialSlide.offsetWidth;
+  testimonialSlide.classList.add('is-changing');
+  testimonialSlide.innerHTML = `
+    <blockquote>“${item.comentario}”</blockquote>
+    <div class="client"><span>${item.iniciais}</span><div><strong>${item.nome}</strong><small>${item.empresa}</small></div></div>`;
+  document.querySelector('#testimonialCounter').textContent = `${String(testimonialIndex + 1).padStart(2, '0')} / ${String(testimonials.length).padStart(2, '0')}`;
+  testimonialDots.querySelectorAll('button').forEach((dot, dotIndex) => dot.classList.toggle('active', dotIndex === testimonialIndex));
+}
+
+function startTestimonialCarousel() {
+  clearInterval(testimonialTimer);
+  if (testimonials.length > 1) testimonialTimer = setInterval(() => renderTestimonial(testimonialIndex + 1), 6500);
+}
+
+if (testimonials.length) {
+  testimonialDots.innerHTML = testimonials.map((_, index) => `<button type="button" aria-label="Ver avaliação ${index + 1}"></button>`).join('');
+  testimonialDots.querySelectorAll('button').forEach((dot, index) => dot.addEventListener('click', () => { renderTestimonial(index); startTestimonialCarousel(); }));
+  document.querySelector('#testimonialPrev').addEventListener('click', () => { renderTestimonial(testimonialIndex - 1); startTestimonialCarousel(); });
+  document.querySelector('#testimonialNext').addEventListener('click', () => { renderTestimonial(testimonialIndex + 1); startTestimonialCarousel(); });
+  testimonialSection.addEventListener('mouseenter', () => clearInterval(testimonialTimer));
+  testimonialSection.addEventListener('mouseleave', startTestimonialCarousel);
+  renderTestimonial(0);
+  startTestimonialCarousel();
+} else {
+  testimonialSection.hidden = true;
+}
 
 document.querySelectorAll('.filter').forEach(button => {
   button.addEventListener('click', () => {
