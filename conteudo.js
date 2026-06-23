@@ -16,12 +16,12 @@
 window.siteContent = {
   projetos: [
     {
-      titulo: "Majestoso Mundo dos Vinhos",
-      categoria: "E-commerce",
-      ano: "2025",
-      imagem: "img/Meus projetos/Majestoso mundo dos vinhos.png",
-      descricao: "Loja virtual para uma curadoria de vinhos.",
-      link: "",
+      titulo: "Site para academia",
+      categoria: "institucional",
+      ano: "2026",
+      imagem: "img/Meus projetos/Academia.JPG",
+      descricao: "Site de apresentação para academia.",
+      link: "https://academia-bemestar-ijn3.vercel.app/",
     },
     {
       titulo: "Chacara Infinity Dreams",
@@ -32,12 +32,12 @@ window.siteContent = {
       link: "https://paginachacara.vercel.app/",
     },
     {
-      titulo: "Casa da Juju",
+      titulo: "Site Empresa",
       categoria: "Institucional",
-      ano: "2024",
-      imagem: "img/Meus projetos/Casa da juju.png",
+      ano: "2026",
+      imagem: "img/Meus projetos/Site empresas.JPG",
       descricao: "Presença online acolhedora para a marca.",
-      link: "",
+      link: "https://site-empresas.vercel.app/",
     },
     {
       titulo: "Ju Nutricionista",
@@ -48,12 +48,12 @@ window.siteContent = {
       link: "https://ju-nutri-chi.vercel.app/",
     },
     {
-      titulo: "Academia Blue Fit",
-      categoria: "Landing page",
-      ano: "2024",
-      imagem: "img/Meus projetos/Acdemia Blue fit.png",
-      descricao: "Página de alta energia para captação de alunos.",
-      link: "",
+      titulo: "Site para concessionária",
+      categoria: "E-commerce",
+      ano: "2026",
+      imagem: "img/Meus projetos/Conssecionaria.JPG",
+      descricao: "Pagina de estoque para concessionária.",
+      link: "https://leautos.vercel.app/#inicio",
     },
     {
       titulo: "Mundo dos veus ",
@@ -94,12 +94,7 @@ window.siteContent = {
       empresa: "Projeto digital",
       iniciais: "CL",
     },
-    {
-      comentario: "Escreva aqui exatamente o comentário enviado pelo cliente.",
-      nome: "Nome do cliente",
-      empresa: "Nome da empresa ou projeto",
-      iniciais: "NC",
-    },
+   
 
     /* COPIE ESTE BLOCO PARA ADICIONAR UMA AVALIAÇÃO:
     ,{
